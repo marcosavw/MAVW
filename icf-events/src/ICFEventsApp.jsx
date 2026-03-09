@@ -341,10 +341,6 @@ function EventModal({ event, onClose, allEvents }) {
                 <p>{event.trackType}</p>
               </div>
               <div className="detail-box">
-                <strong>💪 Difficulty</strong>
-                <p className="difficulty-badge">{event.difficulty}</p>
-              </div>
-              <div className="detail-box">
                 <strong>👥 Capacity</strong>
                 <p>{event.capacity}</p>
               </div>
