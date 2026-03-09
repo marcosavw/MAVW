@@ -215,3 +215,58 @@ body {
   font-size: 1.1em;
   margin: 0;
 }
+
+.map-container {
+  padding: 2rem;
+  margin: 0 2rem;
+}
+
+.leaflet-map {
+  height: 500px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.popup-content {
+  font-family: inherit;
+}
+
+.popup-content h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.95em;
+  color: var(--text-color);
+}
+
+.popup-content p {
+  margin: 0.3rem 0;
+  font-size: 0.85em;
+  color: #666;
+}
+
+.countdown-label {
+  margin-top: 1rem !important;
+  margin-bottom: 0.3rem !important;
+}
+
+.countdown {
+  display: block;
+  padding: 0.5rem;
+  background-color: #fffbea;
+  border-left: 3px solid #ff9800;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #ff6f00;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .leaflet-map {
+    height: 300px;
+  }
+
+  .map-container {
+    padding: 1rem;
+    margin: 0 1rem;
+  }
+}
