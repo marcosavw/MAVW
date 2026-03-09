@@ -34,9 +34,10 @@ const SAMPLE_EVENTS = [
     lng: 7.8744,
     type: 'Slalom',
     status: 'Upcoming',
-    image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=500&h=300&fit=crop',
     description: 'Technical slalom gates on the Dora Baltea River - first major event of spring',
-    trackInfo: '350m rapid course',
+    trackDistance: '350m',
+    trackType: 'Rapid Natural Course',
+    difficulty: 'Advanced',
     capacity: '1,500 spectators'
   },
   {
@@ -48,9 +49,10 @@ const SAMPLE_EVENTS = [
     lng: 20.1461,
     type: 'Sprint',
     status: 'Upcoming',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=300&fit=crop',
     description: 'World-class sprint racing on the Tisza River in Hungary',
-    trackInfo: 'Outdoor 250m course',
+    trackDistance: '250m',
+    trackType: 'Outdoor Straight Course',
+    difficulty: 'Elite',
     capacity: '2,500 spectators'
   },
   {
@@ -62,9 +64,10 @@ const SAMPLE_EVENTS = [
     lng: 12.3674,
     type: 'Slalom',
     status: 'Upcoming',
-    image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=500&h=300&fit=crop',
     description: 'Challenging whitewater slalom in Leipzig - Olympic standard venue',
-    trackInfo: 'Olympic standard course',
+    trackDistance: '300m',
+    trackType: 'Artificial Whitewater',
+    difficulty: 'Advanced',
     capacity: '4,000 spectators'
   },
   {
@@ -76,9 +79,10 @@ const SAMPLE_EVENTS = [
     lng: 24.7504,
     type: 'Sprint',
     status: 'Upcoming',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=300&fit=crop',
     description: 'Europe\'s best sprint paddlers compete on the Danube',
-    trackInfo: '250m Danube course',
+    trackDistance: '250m',
+    trackType: 'River Straight Course',
+    difficulty: 'Elite',
     capacity: '3,500 spectators'
   },
   {
@@ -90,9 +94,10 @@ const SAMPLE_EVENTS = [
     lng: 16.9454,
     type: 'Sprint',
     status: 'Upcoming',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=300&fit=crop',
     description: 'Sprint competition on Malta Lake - premier Polish venue',
-    trackInfo: '250m outdoor course',
+    trackDistance: '250m',
+    trackType: 'Lake Straight Course',
+    difficulty: 'Elite',
     capacity: '3,000 spectators'
   },
   {
@@ -104,9 +109,10 @@ const SAMPLE_EVENTS = [
     lng: 2.3522,
     type: 'Sprint',
     status: 'Upcoming',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=300&fit=crop',
     description: 'Sprint racing in the heart of Paris on the Seine River',
-    trackInfo: 'Seine River course',
+    trackDistance: '250m',
+    trackType: 'River Course',
+    difficulty: 'Elite',
     capacity: '4,500 spectators'
   },
   {
@@ -118,9 +124,10 @@ const SAMPLE_EVENTS = [
     lng: 14.4378,
     type: 'Slalom',
     status: 'Upcoming',
-    image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=500&h=300&fit=crop',
     description: 'Slalom competition on the Vltava River - summer highlight',
-    trackInfo: 'Technical river course',
+    trackDistance: '350m',
+    trackType: 'River Rapid Course',
+    difficulty: 'Advanced',
     capacity: '3,000 spectators'
   },
   {
@@ -132,9 +139,10 @@ const SAMPLE_EVENTS = [
     lng: 19.9450,
     type: 'Slalom',
     status: 'Upcoming',
-    image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=500&h=300&fit=crop',
     description: 'Top European slalom athletes showcase skills in Krakow',
-    trackInfo: 'Vistula River course',
+    trackDistance: '350m',
+    trackType: 'River Course',
+    difficulty: 'Advanced',
     capacity: '2,500 spectators'
   },
   {
@@ -146,9 +154,10 @@ const SAMPLE_EVENTS = [
     lng: 20.4572,
     type: 'Sprint',
     status: 'Upcoming',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=300&fit=crop',
     description: 'Next generation of sprint champions compete on the Danube',
-    trackInfo: '250m Danube course',
+    trackDistance: '250m',
+    trackType: 'River Straight Course',
+    difficulty: 'Elite',
     capacity: '5,000 spectators'
   },
   {
@@ -160,9 +169,10 @@ const SAMPLE_EVENTS = [
     lng: -0.1278,
     type: 'Polo',
     status: 'Upcoming',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=300&fit=crop',
     description: 'Team-based canoe polo action - thrilling international competition',
-    trackInfo: 'Pool course',
+    trackDistance: '60x40m',
+    trackType: 'Pool Course',
+    difficulty: 'Intermediate',
     capacity: '2,000 spectators'
   },
   {
@@ -174,9 +184,10 @@ const SAMPLE_EVENTS = [
     lng: -43.1729,
     type: 'Sprint',
     status: 'Upcoming',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=300&fit=crop',
     description: 'Elite sprint racing on a world-class South American venue',
-    trackInfo: 'Olympic standard course',
+    trackDistance: '250m',
+    trackType: 'Lake Straight Course',
+    difficulty: 'Elite',
     capacity: '8,000 spectators'
   },
   {
@@ -188,9 +199,10 @@ const SAMPLE_EVENTS = [
     lng: 10.8927,
     type: 'Slalom',
     status: 'Upcoming',
-    image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=500&h=300&fit=crop',
     description: 'The ultimate test of slalom skills at Europe\'s premier whitewater venue',
-    trackInfo: 'Artificial whitewater course',
+    trackDistance: '300m',
+    trackType: 'Artificial Whitewater',
+    difficulty: 'Advanced',
     capacity: '6,000 spectators'
   },
   {
@@ -202,9 +214,10 @@ const SAMPLE_EVENTS = [
     lng: -8.2245,
     type: 'Marathon',
     status: 'Upcoming',
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=300&fit=crop',
     description: 'Endurance test across Portuguese waterways - scenic and challenging',
-    trackInfo: 'Long-distance river course',
+    trackDistance: '42km',
+    trackType: 'Long Distance River Course',
+    difficulty: 'Elite',
     capacity: '2,000 spectators'
   },
   {
@@ -216,9 +229,10 @@ const SAMPLE_EVENTS = [
     lng: 113.2644,
     type: 'Dragon Boat',
     status: 'Upcoming',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=300&fit=crop',
     description: 'Traditional dragon boat racing at its finest in China',
-    trackInfo: '500m course',
+    trackDistance: '500m',
+    trackType: 'Straight Racing Course',
+    difficulty: 'Intermediate',
     capacity: '10,000 spectators'
   },
   {
@@ -230,9 +244,10 @@ const SAMPLE_EVENTS = [
     lng: 13.2349,
     type: 'Marathon',
     status: 'Upcoming',
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=300&fit=crop',
     description: 'Long-distance endurance championship - ultimate test of stamina',
-    trackInfo: '50km river course',
+    trackDistance: '50km',
+    trackType: 'Marathon River Course',
+    difficulty: 'Elite',
     capacity: '1,500 spectators'
   },
   {
@@ -244,9 +259,10 @@ const SAMPLE_EVENTS = [
     lng: 5.2500,
     type: 'Wildwater',
     status: 'Upcoming',
-    image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=500&h=300&fit=crop',
     description: 'Navigate challenging rapids and natural obstacles in a true wilderness setting',
-    trackInfo: 'Wild river course',
+    trackDistance: '20km',
+    trackType: 'Wild Rapid Course',
+    difficulty: 'Advanced',
     capacity: '1,200 spectators'
   },
 ]
@@ -284,23 +300,10 @@ function Countdown({ targetDate }) {
 function EventModal({ event, onClose, allEvents }) {
   if (!event) return null
 
-  const nearbyEvents = event.lat && event.lng ? allEvents
-    .filter(e => e.id !== event.id && e.lat && e.lng)
-    .map(e => ({
-      ...e,
-      distance: calculateDistance(event.lat, event.lng, e.lat, e.lng)
-    }))
-    .sort((a, b) => a.distance - b.distance)
-    .slice(0, 5) : []
-
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <button className="modal-close" onClick={onClose}>✕</button>
-
-        {event.image && (
-          <img src={event.image} alt={event.name} className="modal-image" />
-        )}
 
         <div className="modal-body">
           <h2>{event.name}</h2>
@@ -330,8 +333,16 @@ function EventModal({ event, onClose, allEvents }) {
 
             <div className="details-grid">
               <div className="detail-box">
-                <strong>🏊 Track Info</strong>
-                <p>{event.trackInfo}</p>
+                <strong>📏 Track Distance</strong>
+                <p>{event.trackDistance}</p>
+              </div>
+              <div className="detail-box">
+                <strong>🏁 Track Type</strong>
+                <p>{event.trackType}</p>
+              </div>
+              <div className="detail-box">
+                <strong>💪 Difficulty</strong>
+                <p className="difficulty-badge">{event.difficulty}</p>
               </div>
               <div className="detail-box">
                 <strong>👥 Capacity</strong>
@@ -339,20 +350,6 @@ function EventModal({ event, onClose, allEvents }) {
               </div>
             </div>
           </div>
-
-          {nearbyEvents.length > 0 && (
-            <div className="nearby-events">
-              <h3>🗺️ Nearby Events</h3>
-              <div className="nearby-list">
-                {nearbyEvents.map(e => (
-                  <div key={e.id} className="nearby-item">
-                    <span className="nearby-name">{e.name}</span>
-                    <span className="nearby-distance">{e.distance} km away</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
         </div>
       </div>
     </div>
@@ -461,9 +458,6 @@ export default function ICFEventsApp() {
           <div className="events-grid">
             {filteredEvents.map(event => (
               <div key={event.id} className="event-card" onClick={() => setSelectedEvent(event)}>
-                {event.image && (
-                  <img src={event.image} alt={event.name} className="event-image" />
-                )}
                 <div className="event-header">
                   <h3>{event.name}</h3>
                   <span className={`event-type ${event.type.toLowerCase()}`}>
@@ -473,6 +467,7 @@ export default function ICFEventsApp() {
                 <div className="event-details">
                   <p><strong>📅 Date:</strong> {new Date(event.date).toLocaleDateString()}</p>
                   <p><strong>📍 Location:</strong> {event.location}</p>
+                  <p><strong>📏 Track:</strong> {event.trackDistance}</p>
                   <p><strong>Status:</strong> <span className="status upcoming">{event.status}</span></p>
                   <p className="countdown-label"><strong>⏱️ Countdown:</strong></p>
                   <Countdown targetDate={event.date} />

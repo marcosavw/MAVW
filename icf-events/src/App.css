@@ -271,13 +271,6 @@ body {
   }
 }
 
-.event-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px 8px 0 0;
-  margin: -1.5rem -1.5rem 1rem -1.5rem;
-}
 
 .view-details-btn {
   width: 100%;
@@ -346,11 +339,23 @@ body {
   color: var(--primary-color);
 }
 
-.modal-image {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 12px 12px 0 0;
+
+.difficulty-badge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.detail-box:has(.difficulty-badge) .difficulty-badge {
+  background-color: #e7d4f5;
+  color: #5a189a;
+}
+
+.detail-box:has(.difficulty-badge:contains("Elite")) .difficulty-badge {
+  background-color: #f8d7da;
+  color: #842029;
 }
 
 .modal-body {
