@@ -4,66 +4,130 @@ import './App.css'
 const SAMPLE_EVENTS = [
   {
     id: 1,
-    name: 'ICF Canoe Sprint World Championships',
-    date: '2024-08-10',
-    location: 'Budapest, Hungary',
+    name: 'ICF Canoe Sprint World Cup - Szeged',
+    date: '2025-05-16',
+    location: 'Szeged, Hungary',
     type: 'Sprint',
     status: 'Upcoming'
   },
   {
     id: 2,
-    name: 'ICF Slalom World Cup',
-    date: '2024-04-15',
-    location: 'Ljubljana, Slovenia',
-    type: 'Slalom',
-    status: 'Upcoming'
-  },
-  {
-    id: 3,
-    name: 'ICF Marathon Canoe World Championships',
-    date: '2024-09-22',
-    location: 'Egypt',
-    type: 'Marathon',
-    status: 'Upcoming'
-  },
-  {
-    id: 4,
-    name: 'ICF Canoe Slalom European Championships',
-    date: '2024-06-05',
-    location: 'Krakow, Poland',
-    type: 'Slalom',
-    status: 'Upcoming'
-  },
-  {
-    id: 5,
-    name: 'ICF Wildwater Canoeing World Championships',
-    date: '2024-10-12',
-    location: 'Portugal',
-    type: 'Wildwater',
-    status: 'Upcoming'
-  },
-  {
-    id: 6,
-    name: 'ICF Sprint European Championships',
-    date: '2024-07-20',
+    name: 'ICF Canoe Sprint World Cup - Poznań',
+    date: '2025-05-23',
     location: 'Poznań, Poland',
     type: 'Sprint',
     status: 'Upcoming'
   },
   {
+    id: 3,
+    name: 'ICF Slalom World Cup - Ivrea',
+    date: '2025-04-11',
+    location: 'Ivrea, Italy',
+    type: 'Slalom',
+    status: 'Upcoming'
+  },
+  {
+    id: 4,
+    name: 'ICF Slalom World Cup - Markkleeberg',
+    date: '2025-05-09',
+    location: 'Markkleeberg, Germany',
+    type: 'Slalom',
+    status: 'Upcoming'
+  },
+  {
+    id: 5,
+    name: 'ICF Canoe Sprint U23 & Junior World Championships',
+    date: '2025-08-01',
+    location: 'Belgrade, Serbia',
+    type: 'Sprint',
+    status: 'Upcoming'
+  },
+  {
+    id: 6,
+    name: 'ICF Canoe Slalom World Championships',
+    date: '2025-09-08',
+    location: 'Brasília, Brazil',
+    type: 'Slalom',
+    status: 'Upcoming'
+  },
+  {
     id: 7,
+    name: 'ICF Canoe Marathon World Championships',
+    date: '2025-10-04',
+    location: 'TBD',
+    type: 'Marathon',
+    status: 'Upcoming'
+  },
+  {
+    id: 8,
+    name: 'ICF Canoe Sprint World Championships',
+    date: '2025-09-13',
+    location: 'Tokyo, Japan',
+    type: 'Sprint',
+    status: 'Upcoming'
+  },
+  {
+    id: 9,
+    name: 'ICF Wildwater Canoeing World Championships',
+    date: '2026-06-15',
+    location: 'TBD',
+    type: 'Wildwater',
+    status: 'Upcoming'
+  },
+  {
+    id: 10,
     name: 'ICF Dragon Boat World Championships',
-    date: '2024-11-08',
+    date: '2025-11-15',
     location: 'China',
     type: 'Dragon Boat',
     status: 'Upcoming'
   },
   {
-    id: 8,
+    id: 11,
     name: 'ICF Canoe Polo World Championships',
-    date: '2024-08-25',
-    location: 'Rome, Italy',
+    date: '2026-08-01',
+    location: 'TBD',
     type: 'Polo',
+    status: 'Upcoming'
+  },
+  {
+    id: 12,
+    name: 'ICF Sprint European Championships',
+    date: '2025-06-14',
+    location: 'Plovdiv, Bulgaria',
+    type: 'Sprint',
+    status: 'Upcoming'
+  },
+  {
+    id: 13,
+    name: 'ICF Slalom European Championships',
+    date: '2025-07-16',
+    location: 'Krakow, Poland',
+    type: 'Slalom',
+    status: 'Upcoming'
+  },
+  {
+    id: 14,
+    name: 'ICF Marathon European Championships',
+    date: '2025-09-28',
+    location: 'Portugal',
+    type: 'Marathon',
+    status: 'Upcoming'
+  },
+  {
+    id: 15,
+    name: 'ICF Canoe Sprint World Cup - Paris',
+    date: '2025-06-20',
+    location: 'Paris, France',
+    type: 'Sprint',
+    status: 'Upcoming'
+  },
+  {
+    id: 16,
+    name: 'ICF Slalom World Cup - Prague',
+    date: '2025-06-27',
+    location: 'Prague, Czech Republic',
+    type: 'Slalom',
     status: 'Upcoming'
   },
 ]
